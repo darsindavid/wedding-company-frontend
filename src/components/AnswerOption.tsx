@@ -10,13 +10,13 @@ export default function AnswerOption({ option, isSelected, onClick }: AnswerOpti
       onClick={onClick}
       className="w-full transition-all duration-200"
       style={{
-        height: '70px',
-        borderRadius: '10px',
-        border: '1px solid #96E5FF',
-        background: isSelected ? '#C6E9F7' : '#E5F8FF',
+        height: '60px',
+        border: '1px solid #cce7f0',
+        borderRadius: '8px',
+        backgroundColor: isSelected ? '#d2efff' : '#f4fbff',
+        padding: '16px',
         fontFamily: 'Inter, sans-serif',
-        fontSize: '18px',
-        fontWeight: 500,
+        fontSize: '16px',
         color: '#15313D',
         cursor: 'pointer'
       }}

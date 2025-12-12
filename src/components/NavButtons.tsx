@@ -7,17 +7,18 @@ interface NavButtonsProps {
 
 export default function NavButtons({ onPrev, onNext, canGoPrev, canGoNext }: NavButtonsProps) {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-3 mt-6">
       <button
         onClick={onPrev}
         disabled={!canGoPrev}
         style={{
-          width: '45px',
-          height: '45px',
+          width: '44px',
+          height: '44px',
           borderRadius: '8px',
-          border: '1px solid #E5E7EB',
-          background: '#FFFFFF',
-          cursor: canGoPrev ? 'pointer' : 'not-allowed'
+          backgroundColor: '#ffffff',
+          border: '1px solid #e2e8f0',
+          cursor: canGoPrev ? 'pointer' : 'not-allowed',
+          opacity: canGoPrev ? 1 : 0.4
         }}
       >
         ←
@@ -27,13 +28,14 @@ export default function NavButtons({ onPrev, onNext, canGoPrev, canGoNext }: Nav
         onClick={onNext}
         disabled={!canGoNext}
         style={{
-          width: '45px',
-          height: '45px',
+          width: '44px',
+          height: '44px',
           borderRadius: '8px',
-          border: '1px solid #E5E7EB',
-          background: canGoNext ? '#3CABDA' : '#FFFFFF',
-          color: canGoNext ? '#FFFFFF' : '#15313D',
-          cursor: canGoNext ? 'pointer' : 'not-allowed'
+          backgroundColor: canGoNext ? '#3CABDA' : '#ffffff',
+          color: canGoNext ? '#ffffff' : '#000000',
+          border: '1px solid #e2e8f0',
+          cursor: canGoNext ? 'pointer' : 'not-allowed',
+          opacity: canGoNext ? 1 : 0.4
         }}
       >
         →
