@@ -4,21 +4,21 @@ interface ProgressBarProps {
 
 export default function ProgressBar({ progress }: ProgressBarProps) {
   return (
-    <div
+    <div 
+      className="relative w-full"
       style={{
-        height: '6px',
-        width: '100%',
-        backgroundColor: '#e8f6ff',
-        borderRadius: '3px',
+        height: '4px',
+        backgroundColor: '#E5F8FF',
+        borderRadius: '2px',
         overflow: 'hidden'
       }}
     >
-      <div
+      <div 
+        className="absolute top-0 left-0 h-full transition-all duration-300 ease-out"
         style={{
           width: `${progress}%`,
-          height: '100%',
-          backgroundColor: '#3CABDA',
-          transition: 'width 0.3s ease-out'
+          background: 'linear-gradient(90deg, #15313D 0%, #3CABDA 100%)',
+          borderRadius: '2px'
         }}
       />
     </div>

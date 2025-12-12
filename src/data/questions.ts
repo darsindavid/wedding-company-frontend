@@ -8,14 +8,26 @@ export interface Question {
 export const questions: Question[] = [
   {
     id: 1,
-    question: "Placeholder question: What sound does a cat make?",
-    options: ["Option A", "Option B", "Option C"],
+    question: "What sound does a cat make?",
+    options: ["Bhau-Bhau", "Meow-Meow", "Oink-Oink"],
     correctAnswer: 1
   },
   {
     id: 2,
-    question: "Placeholder question: Which item is cold?",
-    options: ["Item A", "Item B", "Item C"],
-    correctAnswer: 0
+    question: "What would you probably find in your fridge?",
+    options: ["Shoes", "Ice Cream", "Books"],
+    correctAnswer: 1
+  },
+  {
+    id: 3,
+    question: "What color are bananas?",
+    options: ["Blue", "Yellow", "Red"],
+    correctAnswer: 1
+  },
+  {
+    id: 4,
+    question: "How many stars are in the sky?",
+    options: ["Two", "Infinite", "One Hundred"],
+    correctAnswer: 1
   }
 ];
