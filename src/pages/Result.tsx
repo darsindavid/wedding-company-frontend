@@ -7,7 +7,7 @@ interface ResultProps {
   isTransitioning: boolean;
 }
 
-export default function Result({ score, totalQuestions, onRestart, isTransitioning }: ResultProps) {
+export default function Result({ score, totalQuestions, onRestart }: ResultProps) {
   const [displayScore, setDisplayScore] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
   
